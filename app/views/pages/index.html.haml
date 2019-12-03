@@ -8,18 +8,22 @@
     = link_to "PROFILE", "#", class: "tab-brack"
     = link_to "STORY", "#", class: "tab-white"
 .tv
+  = image_tag("/assets/index-tv-before.jpeg", class: "tv-image")
   .tv__space-1
-    = image_tag("/assets/tv-portfolio-image-1.jpeg", class: "tv-portfolio-image-1 show")
-    = image_tag("/assets/tv-portfolio-image-2.jpeg", class: "tv-portfolio-image-2")
-    = image_tag("/assets/tv-portfolio-image-3.jpeg", class: "tv-portfolio-image-3")
+    = image_tag("/assets/tv-portfolio-image-0.jpeg", class: "tv-portfolio-image-0")
+    = image_tag("/assets/tv-portfolio-image-1.jpeg", class: "tv-portfolio-image-1 portfolio-image show")
+    = image_tag("/assets/tv-portfolio-image-2.jpeg", class: "tv-portfolio-image-2 portfolio-image hide")
+    = image_tag("/assets/tv-portfolio-image-3.jpeg", class: "tv-portfolio-image-3 portfolio-image hide")
   .tv__space-2
-    = image_tag("/assets/tv-portfolio-image-2.jpeg", class: "tv-image-2 show")
+    = image_tag("/assets/tv-portfolio-image-0.jpeg", class: "tv-masaki-image-0")
+    = image_tag("/assets/tv-portfolio-image-2.jpeg", class: "tv-masaki-image-1 show")
   .tv__space-3
-    = image_tag("/assets/tv-portfolio-image-3.jpeg", class: "tv-image-3 show")
+    = image_tag("/assets/tv-portfolio-image-0.jpeg", class: "tv-murakami-image-0")
+    = image_tag("/assets/tv-portfolio-image-3.jpeg", class: "tv-murakami-image-1 show")
   .tv__tab
-    .tv__tab-portforio-1.active
-    .tv__tab-portforio-2
-    .tv__tab-portforio-3
+    .tv__tab-portforio-1.portfolio-btn.active
+    .tv__tab-portforio-2.portfolio-btn
+    .tv__tab-portforio-3.portfolio-btn
     .tv__tab-masaki-1
     .tv__tab-masaki-2
     .tv__tab-masaki-3
@@ -29,3 +33,4 @@
 .works-1
 .works-2
 .works-3
+

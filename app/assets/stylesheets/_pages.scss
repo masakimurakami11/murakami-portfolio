@@ -70,12 +70,25 @@ body{
   margin-top: 8%;
   background-size: 100% 100%;
   position: relative;
+  .tv-image{
+    height: 100%;
+    width: 100%;
+  }
   &__space-1{
     height: 18%;
     width: 14.8%;
     position: absolute;
     top: 37.6%;
     left: 46.9%;
+    }
+    .tv-portfolio-image-0{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 15px;
+      z-index: 10;
     }
     .tv-portfolio-image-1{
       height: 100%;
@@ -111,13 +124,23 @@ body{
     bottom: 17.5%;
     left: 26.8%;
     }
-    .tv-image-2{
+    .tv-masaki-image-0{
       height: 100%;
       width: 100%;
       position: absolute;
       border-radius: 0 0 15px 15px;
       top: 0;
       left: 0;
+      z-index: 10;
+    }
+    .tv-masaki-image-1{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      border-radius: 0 0 15px 15px;
+      top: 0;
+      left: 0;
+      z-index: 3;
     }
   &__space-3{
     height: 20.6%;
@@ -126,13 +149,23 @@ body{
     bottom: 16.1%;
     right: 24.1%;
     }
-    .tv-image-3{
+    .tv-murakami-image-0{
       height: 100%;
       width: 100%;
       position: absolute;
       border-radius: 0 0 15px 15px;
       top: 0;
       left: 0;
+      z-index: 10;
+    }
+    .tv-murakami-image-1{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      border-radius: 0 0 15px 15px;
+      top: 0;
+      left: 0;
+      z-index: 3;
     }
   &__tab{
     height: 100%;
