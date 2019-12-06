@@ -1,24 +1,28 @@
-.header
-  .header__name
-    %h1.header__name-portfolio PORTFOLIO
-    %p.header__name-masakimurakami - Masaki Murakami -
-  .header__tab
-    = link_to "ABOUT", "#", class: "tab-brack"
-    = link_to "WORKS", "#", class: "tab-white"
-    = link_to "PROFILE", "#", class: "tab-brack"
-    = link_to "STORY", "#", class: "tab-white"
+-# .header
+-#   .header__name
+-#     %h1.header__name-portfolio PORTFOLIO
+-#     %p.header__name-masakimurakami - Masaki Murakami -
+-#   .header__tab
+-#     = link_to "ABOUT", "#", class: "tab-brack"
+-#     = link_to "WORKS", "#", class: "tab-white"
+-#     = link_to "PROFILE", "#", class: "tab-brack"
+-#     = link_to "STORY", "#", class: "tab-white"
 .tv
-  = image_tag("/assets/index-tv-before.jpeg", class: "tv-image")
+  = image_tag("/assets/tv-background-1.jpeg", class: "tv-image1")
+  = image_tag("/assets/tv-background-2.jpeg", class: "tv-image2")
   .tv__space-1
-    = image_tag("/assets/tv-portfolio-image-0.jpeg", class: "tv-portfolio-image-0")
+    = image_tag("/assets/tv-portfolio-image-01.jpeg", class: "tv-portfolio-image-01")
+    = image_tag("/assets/tv-portfolio-image-02.jpeg", class: "tv-portfolio-image-02")
     = image_tag("/assets/tv-portfolio-image-1.jpeg", class: "tv-portfolio-image-1 portfolio-image show")
     = image_tag("/assets/tv-portfolio-image-2.jpeg", class: "tv-portfolio-image-2 portfolio-image hide")
     = image_tag("/assets/tv-portfolio-image-3.jpeg", class: "tv-portfolio-image-3 portfolio-image hide")
   .tv__space-2
-    = image_tag("/assets/tv-portfolio-image-0.jpeg", class: "tv-masaki-image-0")
+    = image_tag("/assets/tv-portfolio-image-02.jpeg", class: "tv-masaki-image-01")
+    = image_tag("/assets/tv-portfolio-image-01.jpeg", class: "tv-masaki-image-02")
     = image_tag("/assets/tv-portfolio-image-2.jpeg", class: "tv-masaki-image-1 show")
   .tv__space-3
-    = image_tag("/assets/tv-portfolio-image-0.jpeg", class: "tv-murakami-image-0")
+    = image_tag("/assets/tv-portfolio-image-02.jpeg", class: "tv-murakami-image-01")
+    = image_tag("/assets/tv-portfolio-image-01.jpeg", class: "tv-murakami-image-02")
     = image_tag("/assets/tv-portfolio-image-3.jpeg", class: "tv-murakami-image-1 show")
   .tv__tab
     .tv__tab-portforio-1.portfolio-btn.active
@@ -31,6 +35,33 @@
     .tv__tab-murakami-2
     .tv__tab-murakami-3
 .works-1
+  %p.works-logo-1 WORK-01
+  %p.works-title-1 - CHAT-SPACE -
+  %p.works-description-1
+    グループで使用できるチャットアプリ<br><br>
+    機能<br>
+    ・devise(gem)を用いたログイン機能<br>
+    ・Jqueryを用いた非同期通信<br>
+    　によるメッセージ投稿<br>
+    ・Jqueryを用いたインクリメンタルサーチ<br>
+    　によるメンバー検索<br>
+    ・Jqueryを用いた５秒ごとの自動更新<br>
+  = link_to "","http://18.176.139.120/", class: "chat-space-1"
+  = link_to "","http://18.176.139.120/", class: "chat-space-2"
 .works-2
+  %p.works-logo-2 WORK-02
+  %p.works-title-2 - FREE-MARKET -
+  %p.works-description-2
+    フリーマーケットアプリ<br><br>
+    機能<br>
+    ・omniauthを用いたFacebook,google認証<br>
+    ・pay.jpを用いた購入機能<br>
+    ・Jqueryを用いた出品機能<br>
+    　（プルダウン、自動計算）<br>
+    ・出品した商品の編集、削除機能
+  = link_to "","http://13.115.135.138/", class: "mercari-1"
+  = link_to "","http://13.115.135.138/", class: "mercari-2"
 .works-3
+  %p.works-logo-1 WORK-03
+  = link_to "準備中","#", class: "ready-1"
 
