@@ -1,12 +1,12 @@
--# .header
--#   .header__name
--#     %h1.header__name-portfolio PORTFOLIO
--#     %p.header__name-masakimurakami - Masaki Murakami -
--#   .header__tab
--#     = link_to "ABOUT", "#", class: "tab-brack"
--#     = link_to "WORKS", "#", class: "tab-white"
--#     = link_to "PROFILE", "#", class: "tab-brack"
--#     = link_to "STORY", "#", class: "tab-white"
+.header
+  .header__name
+    %h1.header__name-portfolio PORTFOLIO
+    %p.header__name-masakimurakami - MASAKI MURAKAMI -
+  .header__tab
+    = link_to "ABOUT", "#", class: "tab-brack"
+    = link_to "WORKS", "#", class: "tab-white"
+    = link_to "PROFILE", "#", class: "tab-brack"
+    = link_to "STORY", "#", class: "tab-white"
 .tv
   = image_tag("/assets/tv-background-1.jpeg", class: "tv-image1")
   = image_tag("/assets/tv-background-2.jpeg", class: "tv-image2")
@@ -35,6 +35,8 @@
     .tv__tab-murakami-2
     .tv__tab-murakami-3
 .works-1
+  = image_tag("/assets/works-image-1-1.png", class: "works-image-1")
+  = image_tag("/assets/works-image-1-2.png", class: "works-image-2")
   %p.works-logo-1 WORK-01
   %p.works-title-1 - CHAT-SPACE -
   %p.works-description-1
@@ -49,6 +51,8 @@
   = link_to "","http://18.176.139.120/", class: "chat-space-1"
   = link_to "","http://18.176.139.120/", class: "chat-space-2"
 .works-2
+  = image_tag("/assets/works-image-2-1.png", class: "works-image-3")
+  = image_tag("/assets/works-image-2-2.png", class: "works-image-4")
   %p.works-logo-2 WORK-02
   %p.works-title-2 - FREE-MARKET -
   %p.works-description-2
@@ -62,6 +66,24 @@
   = link_to "","http://13.115.135.138/", class: "mercari-1"
   = link_to "","http://13.115.135.138/", class: "mercari-2"
 .works-3
+  = image_tag("/assets/works-image-1-1.png", class: "works-image-5")
+  = image_tag("/assets/works-image-3-2.png", class: "works-image-6")
   %p.works-logo-1 WORK-03
   = link_to "準備中","#", class: "ready-1"
+.profile
+  .profile-photo-1
+  .profile-photo-2
+  .profile-photo-3
+  %p.profile-title PROFILE
+  %p.profile-description
+    NAME:<br>
+    　MASAKI MURAKAMI<br>
+    OLD:<br>
+    　23<br>
+    LANGUAGE:<br>
+    　Ruby, Ruby on Rails,<br>
+    　HTML5, CSS3, HAML, SCSS,<br>
+    　JavaScript, Jquery
+.story-1
+.story-2
 
