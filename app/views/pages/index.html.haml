@@ -1,10 +1,11 @@
 .header
   .header__name
-    %h1.header__name-portfolio PORTFOLIO
-    %p.header__name-masakimurakami - MASAKI MURAKAMI -
+    %h1.header__name-portfolio.vh-1.vw-1 PORTFOLIO
+    %p.header__name-masakimurakami.vh-2.vw-2 - MASAKI MURAKAMI -
   .header__tab
-    = link_to "ABOUT", "#", class: "tab-brack"
-    = link_to "WORKS", "#", class: "tab-white"
+    .about-btn.tab-brack ABOUT
+    -# = link_to "ABOUT", "#", class: "tab-brack"
+    = link_to "WORKS", "/#works-01", class: "tab-white"
     = link_to "PROFILE", "#", class: "tab-brack"
     = link_to "STORY", "#", class: "tab-white"
 .tv
@@ -34,10 +35,10 @@
     .tv__tab-murakami-1
     .tv__tab-murakami-2
     .tv__tab-murakami-3
-.works-1
+.works-1#works-01
   = image_tag("/assets/works-image-1-1.png", class: "works-image-1")
   = image_tag("/assets/works-image-1-2.png", class: "works-image-2")
-  %p.works-logo-1 WORK-01
+  %p.works-logo-1 WORKS-01
   %p.works-title-1 - CHAT-SPACE -
   %p.works-description-1
     グループで使用できるチャットアプリ<br><br>
@@ -53,7 +54,7 @@
 .works-2
   = image_tag("/assets/works-image-2-1.png", class: "works-image-3")
   = image_tag("/assets/works-image-2-2.png", class: "works-image-4")
-  %p.works-logo-2 WORK-02
+  %p.works-logo-2 WORKS-02
   %p.works-title-2 - FREE-MARKET -
   %p.works-description-2
     フリーマーケットアプリ<br><br>
@@ -68,7 +69,7 @@
 .works-3
   = image_tag("/assets/works-image-1-1.png", class: "works-image-5")
   = image_tag("/assets/works-image-3-2.png", class: "works-image-6")
-  %p.works-logo-1 WORK-03
+  %p.works-logo-1 WORKS-03
   = link_to "準備中","#", class: "ready-1"
 .profile
   .profile-photo-1
