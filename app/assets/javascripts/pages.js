@@ -1,4 +1,9 @@
 $(function(){
+  $('.about-btn').click(function(){
+    scrollTo(0, 720);
+  })
+})
+$(function(){
   let btns = $(".portfolio-btn");
   function channelSelect(){
     const index = btns.index(this);
@@ -41,8 +46,10 @@ $(function()  {
     setTimeout(function(){
       $('.header').fadeIn(3000);
       $('.tv').animate({'margin-top':'15vh'},3000);
-      $('body').css('overflow', 'auto');
     },5000);
+    setTimeout(function(){
+      $('body').css('overflow', 'auto');
+    },8000);
   })
 });
 
@@ -75,19 +82,19 @@ $(function(){
   })
 })
 
-// $(function(){
-//   $('.works-3').one('mouseenter', function() {
-//     $('.works-image-6').animate({'top':'-100%','left':'0'},3000);
+$(function(){
+  $('.works-3').one('mouseenter', function() {
+    $('.works-image-6').animate({'top':'-100%','left':'0'},3000);
 
-//     setTimeout(function(){
-//       $('.works-image-5').hide();
-//       $('.works-image-6').hide();
-//     },2500);
-//     setTimeout(function(){
-//       $('.ready-1').fadeIn(2000);
-//     },1500);
-//   })
-// })
+    setTimeout(function(){
+      $('.works-image-5').hide();
+      $('.works-image-6').hide();
+    },2500);
+    setTimeout(function(){
+      $('.ready-1').fadeIn(2000);
+    },1500);
+  })
+})
 
 $(function(){
   $('.profile').one('mouseenter', function() {
