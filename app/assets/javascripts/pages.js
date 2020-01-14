@@ -1,9 +1,4 @@
 $(function(){
-  $('.about-btn').click(function(){
-    scrollTo(0, 720);
-  })
-})
-$(function(){
   let btns = $(".portfolio-btn");
   function channelSelect(){
     const index = btns.index(this);
@@ -44,12 +39,8 @@ $(function()  {
       $('.tv-image2').fadeOut();
     },4000);
     setTimeout(function(){
-      $('.header').fadeIn(3000);
-      $('.tv').animate({'margin-top':'15vh'},3000);
-    },5000);
-    setTimeout(function(){
       $('body').css('overflow', 'auto');
-    },8000);
+    },5000);
   })
 });
 
@@ -91,7 +82,8 @@ $(function(){
       $('.works-image-6').hide();
     },2500);
     setTimeout(function(){
-      $('.ready-1').fadeIn(2000);
+      $('.apparel-web-1').fadeIn(2000);
+      $('.apparel-web-2').fadeIn(2000);
     },1500);
   })
 })
@@ -116,7 +108,7 @@ $(function(){
     $('.profile-title').show()
     $('.profile-description').show()
     $('.profile-title').animate({'top':'5%','right':'18%'},3000);
-    $('.profile-description').animate({'top':'24%','right':'12.7%'},3000);
+    $('.profile-description').animate({'top':'24%','right':'11.4%'},3000);
     $('.profile-photo-1').css({
       'transform': 'rotateY(0deg)'
     });
