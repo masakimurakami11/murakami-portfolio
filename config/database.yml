@@ -51,5 +51,5 @@ production:
   <<: *default
   database: murakami-portfolio_production
   username: root
-  password: <%= masaki11 %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
