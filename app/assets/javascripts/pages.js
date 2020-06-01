@@ -118,4 +118,4 @@ $(function(){
     $('.profile-photo-3').animate({'top':'21%','left':'35%'},1000);
     },6000);
   });
-}) 
+})
